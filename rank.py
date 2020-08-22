@@ -29,17 +29,16 @@ we = wother.worksheets[3] # 2是alpha rank
 for a in range(len(time)-2):
      for i in range(1,len(te[a])):
          rank[i-1]=te[a][i]
-        # print(te[a][i])   
+          
      rank.sort(reverse=True)
-    #  print(rank)
+    
      for j in range(len(rank)):
         for k in range(1,len(te[a])):
             if rank[j] == te[a][k]:
                  sort_n[k-1] = j+1
      print(sort_n)
      we.append(sort_n)
-# rank.sort(reverse=True)
-# print(sort_n)
+
 wother.save('/Users/emily/Desktop/merge_al.xlsx')
 
 # sort_n=[]
@@ -52,10 +51,7 @@ wother.save('/Users/emily/Desktop/merge_al.xlsx')
 #         if rank[i]==te[j]:
 #             sort_n[j-1]=i+1
 
-# print(sort_n)
 
-# newfile="/Users/emily/Desktop/merge_al.xlsx"
-# wother = xl.load_workbook(newfile)
-# we = wother.worksheets[2]
+
 
 

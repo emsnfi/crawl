@@ -5,7 +5,7 @@ db = mysql.connector.connect(
   port="3306",
   user = "root",
   password = "password",
-  database="mysql")
+  database="")
   
 cur  =  db . cursor ()
 cur . execute ( "SELECT * FROM db" )
